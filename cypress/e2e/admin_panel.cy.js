@@ -4,7 +4,7 @@ describe('Admin panel', () => {
     it('Admin panel',() => {
         //  cy.viewport(1620, 1080)
 // log in
-         cy.login('info@chytozavryk.top', 'admin1')
+         cy.login_admin()
          cy.get('a.Button_button__aem_D:nth-child(1)').should('have.text', 'Адміністрування')
 // users page
          cy.get('a.Button_button__aem_D:nth-child(1)').click()
