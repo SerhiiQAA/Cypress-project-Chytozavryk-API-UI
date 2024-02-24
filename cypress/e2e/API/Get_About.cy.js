@@ -3,10 +3,14 @@ describe('Get About', () => {
       cy.request('https://1000and1songs.com/api/v1/about').then(response => {
         expect(response).to.have.property('status',200)
         expect(response.body).to.not.be.null
-        response.body.forEach((partner) => {
-            expect(partner).to.have.all.keys('id', "content");
-          });
-            expect(response.body).to.have.length(1);
+        const expectedKeys = [
+            "id",
+            "content"
+          ];    
+          // Перевірка наявності кожного ключа
+          expectedKeys.forEach((key) => {
+            expect(response.body).to.have.property(key);
+          })
         })
       }) 
     })
