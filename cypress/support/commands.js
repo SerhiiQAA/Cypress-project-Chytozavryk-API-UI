@@ -9,3 +9,6 @@ Cypress.Commands.add('login_admin', (email, password) => {
     cy.get('.Auth_button-submit__R2m5P').click()
     // cy.wait(2000)
 })
+
+
+
