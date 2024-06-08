@@ -1,19 +1,18 @@
 # User sign-in test case
+
 **It should do login user:**
-1. Open https://demo.realworld.io/
-Click link in app header
-1. Url path should be
-2. Page heading should be
-3. Page should have form
-4. Type {email} into form field
-5. Type {password} into form field
-6. Click on button
-7. Header should contains {username}
+1. Open https://chytozavryk.top/
+1. Click link "Вхід" in header
+2. Page should have form "Вхід"
+3. Url hash should be "/?auth=signin"
+4. Type valid {email} into form field
+5. Type valid {password} into form field
+6.  Click on button "Увійти"
+7.  Header should contains button "Кабінет"
 
 
 **Where:**
-- {email}
-valid email
-was registered before
-- {password} — current user password
-- {username} — registered user name for {email}
+* {email}
+valid email was registered before
+
+* {password} — string with pattern [0-9a-zA-Z_]{6, 16}
