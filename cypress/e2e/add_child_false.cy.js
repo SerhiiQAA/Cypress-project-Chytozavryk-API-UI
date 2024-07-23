@@ -28,6 +28,5 @@ describe('Add child false', () => {
         cy.get('.Notification_container__Vv3TE').should('be.visible')
         cy.get('.Notification_container__Vv3TE').should('have.text', 'Вибачте, ви вже створили максимально дозволену кількість вігвамів')
         cy.get('.lucide').click()
-        
     })
 })
