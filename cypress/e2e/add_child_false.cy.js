@@ -1,6 +1,10 @@
 describe('Add child false', () => {
     it('Add child',() => {
-        cy.visit('https://chytozavryk.top/')
+        cy.visit('/')
+
+        // cy.injectAxe();
+        // cy.checkA11y();
+
         cy.get('.styles_cookies__B0VbB > .Button_button__aem_D').click()
 
 // modal_log_in/registration

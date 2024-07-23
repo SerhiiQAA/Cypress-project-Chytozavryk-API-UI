@@ -1,7 +1,11 @@
 // / <reference types="cypress" />
 describe('Wigwam', () => {
     it('Вхід в Читозаврика',() => {
-        cy.visit('https://chytozavryk.top/')
+        cy.visit('/')
+
+        // cy.injectAxe();
+        // cy.checkA11y();
+
         cy.get('.styles_cookies__B0VbB > .Button_button__aem_D').click()
 //modal_log_in/registration
         cy.get('.Header_buttonIn__UbNpa').click()

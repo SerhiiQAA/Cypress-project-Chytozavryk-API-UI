@@ -1,6 +1,10 @@
 describe('Registration', () => {
     it('Registration',() => {
-        cy.visit('https://chytozavryk.top/')
+        cy.visit('/')
+
+        // cy.injectAxe();
+        // cy.checkA11y();
+
         cy.get('.styles_cookies__B0VbB > .Button_button__aem_D').click()
         cy.get('.Header_buttonIn__UbNpa').click()
 //modal_log_in/registration

@@ -5,6 +5,10 @@ describe('Admin panel', () => {
         //  cy.viewport(1620, 1080)
 // log in
          cy.login_admin()
+
+        //  cy.injectAxe();
+        // cy.checkA11y();
+
          cy.get('a.Button_button__aem_D:nth-child(1)').should('have.text', 'Адміністрування')
 // users page
          cy.get('a.Button_button__aem_D:nth-child(1)').click()
