@@ -10,7 +10,9 @@ module.exports = defineConfig({
       addMatchImageSnapshotPlugin(on)
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
-      // allureCypress(on);
+      allureCypress(on, {
+        resultsDir: "./allure-results",
+      });
     },
   },
 });

@@ -31,4 +31,4 @@ addMatchImageSnapshotCommand({
   failureThreshold: 0.2,
 })
 
-
+import "allure-cypress";
